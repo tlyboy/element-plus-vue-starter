@@ -5,11 +5,11 @@
   "private": true,
   "packageManager": "pnpm@8.10.5",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
+    "dev": "vite",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@unocss/reset": "^0.57.4",
@@ -22,7 +22,7 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^1.1.4",
+    "@antfu/eslint-config": "^1.2.0",
     "@iconify-json/carbon": "^1.1.21",
     "@types/nprogress": "^0.2.3",
     "@unocss/eslint-plugin": "^0.57.4",

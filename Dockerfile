@@ -1,11 +1,16 @@
-FROM node:20-alpine
-COPY ./ /app
+FROM node:20-alpine as build-stage
+
 WORKDIR /app
 RUN corepack enable
-RUN pnpm install
-RUN pnpm run build
 
-FROM caddy
-RUN mkdir /app
-COPY --from=0 /app/dist /app
+COPY .npmrc package.json pnpm-lock.yaml ./
+RUN --mount=type=cache,id=pnpm-store,target=/root/.pnpm-store \
+    pnpm install --frozen-lockfile
+
+COPY . .
+RUN pnpm build
+
+FROM caddy as production-stage
+
+COPY --from=build-stage /app/dist /app
 COPY Caddyfile /etc/caddy/Caddyfile

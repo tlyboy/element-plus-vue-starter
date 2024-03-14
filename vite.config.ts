@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 import Vue from '@vitejs/plugin-vue'
+import VueDevTools from 'vite-plugin-vue-devtools'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import Layouts from 'vite-plugin-vue-layouts'
@@ -21,6 +22,7 @@ export default defineConfig({
         vue: Vue(),
       },
     }),
+    VueDevTools(),
     Components({
       resolvers: [
         ElementPlusResolver({

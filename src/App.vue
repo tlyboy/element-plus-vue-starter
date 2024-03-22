@@ -6,6 +6,8 @@ const locale = ref(zhCn)
 
 <template>
   <el-config-provider :locale="locale">
-    <RouterView />
+    <el-scrollbar height="100%">
+      <RouterView />
+    </el-scrollbar>
   </el-config-provider>
 </template>

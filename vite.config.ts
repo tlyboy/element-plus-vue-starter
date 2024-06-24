@@ -24,24 +24,24 @@ export default defineConfig({
     }),
     VueDevTools(),
     Components({
+      dts: 'src/components.d.ts',
       resolvers: [
         ElementPlusResolver({
           importStyle: 'sass',
         }),
       ],
-      dts: 'src/components.d.ts',
     }),
     Layouts(),
     AutoImport({
-      resolvers: [
-        ElementPlusResolver({
-          importStyle: 'sass',
-        }),
-      ],
       imports: ['vue', VueRouterAutoImports, 'pinia', '@vueuse/core'],
       dts: 'src/auto-imports.d.ts',
       dirs: ['./src/utils', './src/stores', './src/composables'],
       vueTemplate: true,
+      resolvers: [
+        ElementPlusResolver({
+          importStyle: 'sass',
+        }),
+      ],
     }),
   ],
   resolve: {

@@ -1,0 +1,6 @@
+:80 {
+  root * /app
+  encode
+  try_files {path} /index.html
+  file_server
+}

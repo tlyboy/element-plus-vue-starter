@@ -1,0 +1,47 @@
+{
+  "name": "element-plus-vue-starter",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "run-p type-check \"build-only {@}\" --",
+    "build-only": "vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "type-check": "vue-tsc --build"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@tailwindcss/vite": "^4.1.11",
+    "@vueuse/core": "^13.5.0",
+    "element-plus": "^2.10.4",
+    "pinia": "^3.0.3",
+    "pinia-plugin-persistedstate": "^4.4.1",
+    "tailwindcss": "^4.1.11",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@egoist/tailwindcss-icons": "^1.9.0",
+    "@iconify-json/carbon": "^1.2.10",
+    "@tsconfig/node22": "^22.0.2",
+    "@types/node": "^22.16.4",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "@vue/tsconfig": "^0.7.0",
+    "npm-run-all2": "^7.0.2",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "sass": "^1.89.2",
+    "typescript": "~5.8.3",
+    "unplugin-auto-import": "^19.3.0",
+    "unplugin-vue-components": "^28.8.0",
+    "unplugin-vue-router": "^0.12.0",
+    "vite": "npm:rolldown-vite@latest",
+    "vite-plugin-vue-devtools": "^7.7.7",
+    "vite-plugin-vue-layouts": "^0.11.0",
+    "vue-tsc": "^3.0.1"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}

@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@plugin '@egoist/tailwindcss-icons' {
+  scale: 1.2;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+html {
+  background: #f3f3f3;
+}
+
+html.dark {
+  background: #111111;
+  color-scheme: dark;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+.dark::view-transition-old(root) {
+  z-index: 9999;
+}
+
+.dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+@layer components {
+  .btn {
+    @apply inline-block cursor-pointer rounded bg-[#3498db] px-4 py-1 text-white !outline-none hover:bg-[#2980b9] disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
+  }
+
+  .icon-btn {
+    @apply inline-block cursor-pointer opacity-75 transition duration-200 ease-in-out select-none hover:text-[#3498db] hover:opacity-100;
+  }
+}

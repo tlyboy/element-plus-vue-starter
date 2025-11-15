@@ -1,6 +1,5 @@
 onlyBuiltDependencies:
   - '@parcel/watcher'
-  - '@tailwindcss/oxide'
   - vue-demi
 
 shamefullyHoist: true

@@ -13,7 +13,7 @@ importers:
         version: 2.3.2(vue@3.5.24(typescript@5.9.3))
       '@tailwindcss/vite':
         specifier: ^4.1.17
-        version: 4.1.17(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1))
+        version: 4.1.17(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2))
       '@vueuse/core':
         specifier: ^14.0.0
         version: 14.0.0(vue@3.5.24(typescript@5.9.3))
@@ -33,8 +33,8 @@ importers:
         specifier: ^3.5.24
         version: 3.5.24(typescript@5.9.3)
       vue-router:
-        specifier: ^4.6.3
-        version: 4.6.3(vue@3.5.24(typescript@5.9.3))
+        specifier: ^5.0.0
+        version: 5.0.0(@vue/compiler-sfc@3.5.24)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
     devDependencies:
       '@egoist/tailwindcss-icons':
         specifier: ^1.9.0
@@ -50,7 +50,7 @@ importers:
         version: 22.19.1
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.1(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1))(vue@3.5.24(typescript@5.9.3))
+        version: 6.0.1(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2))(vue@3.5.24(typescript@5.9.3))
       '@vue/tsconfig':
         specifier: ^0.8.1
         version: 0.8.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))
@@ -74,19 +74,16 @@ importers:
         version: 19.3.0(@vueuse/core@14.0.0(vue@3.5.24(typescript@5.9.3)))
       unplugin-vue-components:
         specifier: ^30.0.0
-        version: 30.0.0(@babel/parser@7.28.5)(vue@3.5.24(typescript@5.9.3))
-      unplugin-vue-router:
-        specifier: ^0.17.0
-        version: 0.17.0(@vue/compiler-sfc@3.5.24)(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
+        version: 30.0.0(@babel/parser@7.28.6)(vue@3.5.24(typescript@5.9.3))
       vite:
         specifier: npm:rolldown-vite@latest
-        version: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1)
+        version: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2)
       vite-plugin-vue-devtools:
         specifier: ^8.0.3
-        version: 8.0.3(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1))(vue@3.5.24(typescript@5.9.3))
+        version: 8.0.3(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2))(vue@3.5.24(typescript@5.9.3))
       vite-plugin-vue-layouts:
         specifier: ^0.11.0
-        version: 0.11.0(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1))(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
+        version: 0.11.0(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2))(vue-router@5.0.0(@vue/compiler-sfc@3.5.24)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
       vue-tsc:
         specifier: ^3.1.3
         version: 3.1.3(typescript@5.9.3)
@@ -113,6 +110,10 @@ packages:
 
   '@babel/generator@7.28.5':
     resolution: {integrity: sha512-3EwLFhZ38J4VyIP6WNtt2kUdW9dokXA9Cr4IVIFHuCpZ3H8/YFOl5JjZHisrn1fATPBmKKqXzDFvh9fUwHz6CQ==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/generator@7.28.6':
+    resolution: {integrity: sha512-lOoVRwADj8hjf7al89tvQ2a1lf53Z+7tiXMgpZJL3maQPDxh0DgLMN62B2MKUOFcoodBHLMbDM6WAbKgNy5Suw==}
     engines: {node: '>=6.9.0'}
 
   '@babel/helper-annotate-as-pure@7.27.3':
@@ -186,6 +187,11 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
 
+  '@babel/parser@7.28.6':
+    resolution: {integrity: sha512-TeR9zWR18BvbfPmGbLampPMW+uW1NZnJlRuuHso8i87QZNq2JRF9i6RgxRqtEq+wQGsS19NNTWr2duhnE49mfQ==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
   '@babel/plugin-proposal-decorators@7.28.0':
     resolution: {integrity: sha512-zOiZqvANjWDUaUS9xMxbMcK/Zccztbe/6ikvUXaG9nsPH3w6qh5UaPGAnirI/WhIbZ8m3OHU0ReyPrknG+ZKeg==}
     engines: {node: '>=6.9.0'}
@@ -237,6 +243,10 @@ packages:
 
   '@babel/types@7.28.5':
     resolution: {integrity: sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/types@7.28.6':
+    resolution: {integrity: sha512-0ZrskXVEHSWIqZM/sQZ4EV3jZJXRkio/WCxaqKZP1g//CEWEPSfeZFcms4XeKBCHU0ZKnIkdJeU/kF+eRp5lBg==}
     engines: {node: '>=6.9.0'}
 
   '@ctrl/tinycolor@3.6.1':
@@ -662,11 +672,11 @@ packages:
   '@vue/compiler-ssr@3.5.24':
     resolution: {integrity: sha512-trOvMWNBMQ/odMRHW7Ae1CdfYx+7MuiQu62Jtu36gMLXcaoqKvAyh+P73sYG9ll+6jLB6QPovqoKGGZROzkFFg==}
 
-  '@vue/devtools-api@6.6.4':
-    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
-
   '@vue/devtools-api@7.7.8':
     resolution: {integrity: sha512-BtFcAmDbtXGwurWUFf8ogIbgZyR+rcVES1TSNEI8Em80fD8Anu+qTRN1Fc3J6vdRHlVM3fzPV1qIo+B4AiqGzw==}
+
+  '@vue/devtools-api@8.0.5':
+    resolution: {integrity: sha512-DgVcW8H/Nral7LgZEecYFFYXnAvGuN9C3L3DtWekAncFBedBczpNW8iHKExfaM559Zm8wQWrwtYZ9lXthEHtDw==}
 
   '@vue/devtools-core@8.0.3':
     resolution: {integrity: sha512-gCEQN7aMmeaigEWJQ2Z2o3g7/CMqGTPvNS1U3n/kzpLoAZ1hkAHNgi4ml/POn/9uqGILBk65GGOUdrraHXRj5Q==}
@@ -679,11 +689,17 @@ packages:
   '@vue/devtools-kit@8.0.3':
     resolution: {integrity: sha512-UF4YUOVGdfzXLCv5pMg2DxocB8dvXz278fpgEE+nJ/DRALQGAva7sj9ton0VWZ9hmXw+SV8yKMrxP2MpMhq9Wg==}
 
+  '@vue/devtools-kit@8.0.5':
+    resolution: {integrity: sha512-q2VV6x1U3KJMTQPUlRMyWEKVbcHuxhqJdSr6Jtjz5uAThAIrfJ6WVZdGZm5cuO63ZnSUz0RCsVwiUUb0mDV0Yg==}
+
   '@vue/devtools-shared@7.7.8':
     resolution: {integrity: sha512-XHpO3jC5nOgYr40M9p8Z4mmKfTvUxKyRcUnpBAYg11pE78eaRFBKb0kG5yKLroMuJeeNH9LWmKp2zMU5LUc7CA==}
 
   '@vue/devtools-shared@8.0.3':
     resolution: {integrity: sha512-s/QNll7TlpbADFZrPVsaUNPCOF8NvQgtgmmB7Tip6pLf/HcOvBTly0lfLQ0Eylu9FQ4OqBhFpLyBgwykiSf8zw==}
+
+  '@vue/devtools-shared@8.0.5':
+    resolution: {integrity: sha512-bRLn6/spxpmgLk+iwOrR29KrYnJjG9DGpHGkDFG82UM21ZpJ39ztUT9OXX3g+usW7/b2z+h46I9ZiYyB07XMXg==}
 
   '@vue/language-core@3.1.3':
     resolution: {integrity: sha512-KpR1F/eGAG9D1RZ0/T6zWJs6dh/pRLfY5WupecyYKJ1fjVmDMgTPw9wXmKv2rBjo4zCJiOSiyB8BDP1OUwpMEA==}
@@ -796,6 +812,10 @@ packages:
   chokidar@4.0.3:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
     engines: {node: '>= 14.16.0'}
+
+  chokidar@5.0.0:
+    resolution: {integrity: sha512-TQMmc3w+5AxjpL8iIiwebF73dRDF4fBIieAqGn9RGCWaEVwQ6Fb2cGe31Yns0RRIzii5goJ1Y7xbMwo1TxMplw==}
+    engines: {node: '>= 20.19.0'}
 
   confbox@0.1.8:
     resolution: {integrity: sha512-RMtmw0iFkeR4YV+fUOSucriAQNb9g8zFR52MWCtl+cCZOFRNL6zeB395vPzFhEjjn4fMxXudmELnl/KF/WrK6w==}
@@ -1304,6 +1324,10 @@ packages:
     resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
     engines: {node: '>= 14.18.0'}
 
+  readdirp@5.0.0:
+    resolution: {integrity: sha512-9u/XQ1pvrQtYyMpZe7DXKv2p5CNvyVwzUB6uhLAnQwHMSgKMBR62lc7AHljaeteeHXn11XTAaLLUVZYVZyuRBQ==}
+    engines: {node: '>= 20.19.0'}
+
   reusify@1.1.0:
     resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
@@ -1480,17 +1504,12 @@ packages:
       '@nuxt/kit':
         optional: true
 
-  unplugin-vue-router@0.17.0:
-    resolution: {integrity: sha512-cQYRlybeOZWANyjipekbJxnUH3LnqbOHmUFXNzJ6BplH8BeiEEA7lZnNUc0EIktR8fe2I+zghAEPb+Jod8o6TQ==}
-    peerDependencies:
-      '@vue/compiler-sfc': ^3.5.17
-      vue-router: ^4.6.0
-    peerDependenciesMeta:
-      vue-router:
-        optional: true
-
   unplugin@2.3.10:
     resolution: {integrity: sha512-6NCPkv1ClwH+/BGE9QeoTIl09nuiAt0gS28nn1PvYXsGKRwM2TCbFA2QiilmehPDTXIe684k4rZI1yl3A1PCUw==}
+    engines: {node: '>=18.12.0'}
+
+  unplugin@2.3.11:
+    resolution: {integrity: sha512-5uKD0nqiYVzlmCRs01Fhs2BdkEgBS3SAVP6ndrBsuK42iC2+JHyxM05Rm9G8+5mkmRtzMZGY8Ct5+mliZxU/Ww==}
     engines: {node: '>=18.12.0'}
 
   update-browserslist-db@1.1.4:
@@ -1551,10 +1570,20 @@ packages:
       '@vue/composition-api':
         optional: true
 
-  vue-router@4.6.3:
-    resolution: {integrity: sha512-ARBedLm9YlbvQomnmq91Os7ck6efydTSpRP3nuOKCvgJOHNrhRoJDSKtee8kcL1Vf7nz6U+PMBL+hTvR3bTVQg==}
+  vue-router@5.0.0:
+    resolution: {integrity: sha512-xWHlps4o1ScODWqvyapl0v1uGy0g7ozmsTSO/dguyGb/9RL6oSU2HfN/8oMXnoFOH1BuTaAkbiOz4OWdkfjcZg==}
     peerDependencies:
+      '@pinia/colada': ^0.18.1
+      '@vue/compiler-sfc': ^3.5.17
+      pinia: ^3.0.4
       vue: ^3.5.0
+    peerDependenciesMeta:
+      '@pinia/colada':
+        optional: true
+      '@vue/compiler-sfc':
+        optional: true
+      pinia:
+        optional: true
 
   vue-tsc@3.1.3:
     resolution: {integrity: sha512-StMNfZHwPIXQgY3KxPKM0Jsoc8b46mDV3Fn2UlHCBIwRJApjqrSwqeMYgWf0zpN+g857y74pv7GWuBm+UqQe1w==}
@@ -1590,8 +1619,8 @@ packages:
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
 
-  yaml@2.8.1:
-    resolution: {integrity: sha512-lcYcMxX2PO9XMGvAJkJ3OsNMw+/7FKes7/hgerGUYWIoWu5j/+YQqcZr5JnPZWzOsEBgMbSbiSTn/dv/69Mkpw==}
+  yaml@2.8.2:
+    resolution: {integrity: sha512-mplynKqc1C2hTVYxd0PU2xQAc22TI1vShAYGksCCfxbn/dFwnHTNi1bvYsBTkhdUNtGIf5xNOg938rrSSYvS9A==}
     engines: {node: '>= 14.6'}
     hasBin: true
 
@@ -1636,6 +1665,14 @@ snapshots:
     dependencies:
       '@babel/parser': 7.28.5
       '@babel/types': 7.28.5
+      '@jridgewell/gen-mapping': 0.3.13
+      '@jridgewell/trace-mapping': 0.3.31
+      jsesc: 3.1.0
+
+  '@babel/generator@7.28.6':
+    dependencies:
+      '@babel/parser': 7.28.6
+      '@babel/types': 7.28.6
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
       jsesc: 3.1.0
@@ -1727,6 +1764,10 @@ snapshots:
     dependencies:
       '@babel/types': 7.28.5
 
+  '@babel/parser@7.28.6':
+    dependencies:
+      '@babel/types': 7.28.6
+
   '@babel/plugin-proposal-decorators@7.28.0(@babel/core@7.28.5)':
     dependencies:
       '@babel/core': 7.28.5
@@ -1791,6 +1832,11 @@ snapshots:
       - supports-color
 
   '@babel/types@7.28.5':
+    dependencies:
+      '@babel/helper-string-parser': 7.27.1
+      '@babel/helper-validator-identifier': 7.28.5
+
+  '@babel/types@7.28.6':
     dependencies:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
@@ -2070,12 +2116,12 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.1.17
       '@tailwindcss/oxide-win32-x64-msvc': 4.1.17
 
-  '@tailwindcss/vite@4.1.17(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1))':
+  '@tailwindcss/vite@4.1.17(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2))':
     dependencies:
       '@tailwindcss/node': 4.1.17
       '@tailwindcss/oxide': 4.1.17
       tailwindcss: 4.1.17
-      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1)
+      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2)
 
   '@tsconfig/node22@22.0.3': {}
 
@@ -2100,10 +2146,10 @@ snapshots:
 
   '@types/web-bluetooth@0.0.21': {}
 
-  '@vitejs/plugin-vue@6.0.1(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1))(vue@3.5.24(typescript@5.9.3))':
+  '@vitejs/plugin-vue@6.0.1(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2))(vue@3.5.24(typescript@5.9.3))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.29
-      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1)
+      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2)
       vue: 3.5.24(typescript@5.9.3)
 
   '@volar/language-core@2.4.23':
@@ -2187,20 +2233,22 @@ snapshots:
       '@vue/compiler-dom': 3.5.24
       '@vue/shared': 3.5.24
 
-  '@vue/devtools-api@6.6.4': {}
-
   '@vue/devtools-api@7.7.8':
     dependencies:
       '@vue/devtools-kit': 7.7.8
 
-  '@vue/devtools-core@8.0.3(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1))(vue@3.5.24(typescript@5.9.3))':
+  '@vue/devtools-api@8.0.5':
+    dependencies:
+      '@vue/devtools-kit': 8.0.5
+
+  '@vue/devtools-core@8.0.3(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2))(vue@3.5.24(typescript@5.9.3))':
     dependencies:
       '@vue/devtools-kit': 8.0.3
       '@vue/devtools-shared': 8.0.3
       mitt: 3.0.1
       nanoid: 5.1.6
       pathe: 2.0.3
-      vite-hot-client: 2.1.0(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1))
+      vite-hot-client: 2.1.0(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2))
       vue: 3.5.24(typescript@5.9.3)
     transitivePeerDependencies:
       - vite
@@ -2225,11 +2273,25 @@ snapshots:
       speakingurl: 14.0.1
       superjson: 2.2.5
 
+  '@vue/devtools-kit@8.0.5':
+    dependencies:
+      '@vue/devtools-shared': 8.0.5
+      birpc: 2.8.0
+      hookable: 5.5.3
+      mitt: 3.0.1
+      perfect-debounce: 2.0.0
+      speakingurl: 14.0.1
+      superjson: 2.2.5
+
   '@vue/devtools-shared@7.7.8':
     dependencies:
       rfdc: 1.4.1
 
   '@vue/devtools-shared@8.0.3':
+    dependencies:
+      rfdc: 1.4.1
+
+  '@vue/devtools-shared@8.0.5':
     dependencies:
       rfdc: 1.4.1
 
@@ -2351,6 +2413,10 @@ snapshots:
   chokidar@4.0.3:
     dependencies:
       readdirp: 4.1.2
+
+  chokidar@5.0.0:
+    dependencies:
+      readdirp: 5.0.0
 
   confbox@0.1.8: {}
 
@@ -2714,11 +2780,13 @@ snapshots:
 
   readdirp@4.1.2: {}
 
+  readdirp@5.0.0: {}
+
   reusify@1.1.0: {}
 
   rfdc@1.4.1: {}
 
-  rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1):
+  rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2):
     dependencies:
       '@oxc-project/runtime': 0.97.0
       fdir: 6.5.0(picomatch@4.0.3)
@@ -2732,7 +2800,7 @@ snapshots:
       fsevents: 2.3.3
       jiti: 2.6.1
       sass: 1.94.0
-      yaml: 2.8.1
+      yaml: 2.8.2
 
   rolldown@1.0.0-beta.50:
     dependencies:
@@ -2862,7 +2930,7 @@ snapshots:
       pathe: 2.0.3
       picomatch: 4.0.3
 
-  unplugin-vue-components@30.0.0(@babel/parser@7.28.5)(vue@3.5.24(typescript@5.9.3)):
+  unplugin-vue-components@30.0.0(@babel/parser@7.28.6)(vue@3.5.24(typescript@5.9.3)):
     dependencies:
       chokidar: 4.0.3
       debug: 4.4.3
@@ -2874,37 +2942,18 @@ snapshots:
       unplugin-utils: 0.3.1
       vue: 3.5.24(typescript@5.9.3)
     optionalDependencies:
-      '@babel/parser': 7.28.5
+      '@babel/parser': 7.28.6
     transitivePeerDependencies:
       - supports-color
 
-  unplugin-vue-router@0.17.0(@vue/compiler-sfc@3.5.24)(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3)):
-    dependencies:
-      '@babel/generator': 7.28.5
-      '@vue-macros/common': 3.1.1(vue@3.5.24(typescript@5.9.3))
-      '@vue/compiler-sfc': 3.5.24
-      '@vue/language-core': 3.1.3(typescript@5.9.3)
-      ast-walker-scope: 0.8.3
-      chokidar: 4.0.3
-      json5: 2.2.3
-      local-pkg: 1.1.2
-      magic-string: 0.30.21
-      mlly: 1.8.0
-      muggle-string: 0.4.1
-      pathe: 2.0.3
-      picomatch: 4.0.3
-      scule: 1.3.0
-      tinyglobby: 0.2.15
-      unplugin: 2.3.10
-      unplugin-utils: 0.3.1
-      yaml: 2.8.1
-    optionalDependencies:
-      vue-router: 4.6.3(vue@3.5.24(typescript@5.9.3))
-    transitivePeerDependencies:
-      - typescript
-      - vue
-
   unplugin@2.3.10:
+    dependencies:
+      '@jridgewell/remapping': 2.3.5
+      acorn: 8.15.0
+      picomatch: 4.0.3
+      webpack-virtual-modules: 0.6.2
+
+  unplugin@2.3.11:
     dependencies:
       '@jridgewell/remapping': 2.3.5
       acorn: 8.15.0
@@ -2917,17 +2966,17 @@ snapshots:
       escalade: 3.2.0
       picocolors: 1.1.1
 
-  vite-dev-rpc@1.1.0(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1)):
+  vite-dev-rpc@1.1.0(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2)):
     dependencies:
       birpc: 2.8.0
-      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1)
-      vite-hot-client: 2.1.0(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1))
+      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2)
+      vite-hot-client: 2.1.0(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2))
 
-  vite-hot-client@2.1.0(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1)):
+  vite-hot-client@2.1.0(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2)):
     dependencies:
-      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1)
+      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2)
 
-  vite-plugin-inspect@11.3.3(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1)):
+  vite-plugin-inspect@11.3.3(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2)):
     dependencies:
       ansis: 4.2.0
       debug: 4.4.3
@@ -2937,26 +2986,26 @@ snapshots:
       perfect-debounce: 2.0.0
       sirv: 3.0.2
       unplugin-utils: 0.3.1
-      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1)
-      vite-dev-rpc: 1.1.0(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1))
+      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2)
+      vite-dev-rpc: 1.1.0(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2))
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-vue-devtools@8.0.3(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1))(vue@3.5.24(typescript@5.9.3)):
+  vite-plugin-vue-devtools@8.0.3(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2))(vue@3.5.24(typescript@5.9.3)):
     dependencies:
-      '@vue/devtools-core': 8.0.3(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1))(vue@3.5.24(typescript@5.9.3))
+      '@vue/devtools-core': 8.0.3(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2))(vue@3.5.24(typescript@5.9.3))
       '@vue/devtools-kit': 8.0.3
       '@vue/devtools-shared': 8.0.3
       sirv: 3.0.2
-      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1)
-      vite-plugin-inspect: 11.3.3(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1))
-      vite-plugin-vue-inspector: 5.3.2(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1))
+      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2)
+      vite-plugin-inspect: 11.3.3(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2))
+      vite-plugin-vue-inspector: 5.3.2(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2))
     transitivePeerDependencies:
       - '@nuxt/kit'
       - supports-color
       - vue
 
-  vite-plugin-vue-inspector@5.3.2(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1)):
+  vite-plugin-vue-inspector@5.3.2(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2)):
     dependencies:
       '@babel/core': 7.28.5
       '@babel/plugin-proposal-decorators': 7.28.0(@babel/core@7.28.5)
@@ -2967,17 +3016,17 @@ snapshots:
       '@vue/compiler-dom': 3.5.24
       kolorist: 1.8.0
       magic-string: 0.30.21
-      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1)
+      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2)
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-vue-layouts@0.11.0(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1))(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3)):
+  vite-plugin-vue-layouts@0.11.0(rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2))(vue-router@5.0.0(@vue/compiler-sfc@3.5.24)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3)):
     dependencies:
       debug: 4.4.3
       fast-glob: 3.3.3
-      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.1)
+      vite: rolldown-vite@7.2.5(@types/node@22.19.1)(jiti@2.6.1)(sass@1.94.0)(yaml@2.8.2)
       vue: 3.5.24(typescript@5.9.3)
-      vue-router: 4.6.3(vue@3.5.24(typescript@5.9.3))
+      vue-router: 5.0.0(@vue/compiler-sfc@3.5.24)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
     transitivePeerDependencies:
       - supports-color
 
@@ -2987,10 +3036,29 @@ snapshots:
     dependencies:
       vue: 3.5.24(typescript@5.9.3)
 
-  vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)):
+  vue-router@5.0.0(@vue/compiler-sfc@3.5.24)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3)):
     dependencies:
-      '@vue/devtools-api': 6.6.4
+      '@babel/generator': 7.28.6
+      '@vue-macros/common': 3.1.1(vue@3.5.24(typescript@5.9.3))
+      '@vue/devtools-api': 8.0.5
+      ast-walker-scope: 0.8.3
+      chokidar: 5.0.0
+      json5: 2.2.3
+      local-pkg: 1.1.2
+      magic-string: 0.30.21
+      mlly: 1.8.0
+      muggle-string: 0.4.1
+      pathe: 2.0.3
+      picomatch: 4.0.3
+      scule: 1.3.0
+      tinyglobby: 0.2.15
+      unplugin: 2.3.11
+      unplugin-utils: 0.3.1
       vue: 3.5.24(typescript@5.9.3)
+      yaml: 2.8.2
+    optionalDependencies:
+      '@vue/compiler-sfc': 3.5.24
+      pinia: 3.0.4(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))
 
   vue-tsc@3.1.3(typescript@5.9.3):
     dependencies:
@@ -3024,4 +3092,4 @@ snapshots:
 
   yallist@3.1.1: {}
 
-  yaml@2.8.1: {}
+  yaml@2.8.2: {}

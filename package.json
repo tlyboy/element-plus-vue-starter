@@ -24,7 +24,7 @@
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.9.2",
     "@iconify-json/carbon": "^1.2.19",
-    "@tsconfig/node22": "^22.0.5",
+    "@tsconfig/node24": "^24.0.4",
     "@types/node": "^24.12.0",
     "@vitejs/plugin-vue": "^6.0.4",
     "@vue/tsconfig": "^0.8.1",

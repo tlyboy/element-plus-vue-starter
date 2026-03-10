@@ -24,7 +24,9 @@ pnpm preview      # Preview production build
 ## Architecture Features
 
 ### Auto Imports
+
 The project uses `unplugin-auto-import` and `unplugin-vue-components`. The following do not require manual imports:
+
 - Vue API (`ref`, `computed`, `watch`, etc.)
 - Vue Router API
 - VueUse functions
@@ -35,17 +37,22 @@ The project uses `unplugin-auto-import` and `unplugin-vue-components`. The follo
 - Components under `src/components/`
 
 ### File-based Routing
+
 Uses `unplugin-vue-router` for file-based routing:
+
 - The `src/pages/` directory structure maps directly to routes
 - `src/layouts/` contains layout components, defaulting to `default.vue`
 
 ### Element Plus Theme Customization
+
 - Primary color config: `src/styles/element/index.scss`
 - Dark mode: `src/styles/element/dark.scss`
 - Theme customization via SCSS variable overrides
 
 ### Tailwind CSS Icons
+
 Uses Iconify icons via `@egoist/tailwindcss-icons`, class name format: `i-{collection}-{icon}`
+
 - Installed icon set: `@iconify-json/carbon`
 
 ## Path Aliases

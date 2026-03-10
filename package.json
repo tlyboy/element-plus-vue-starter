@@ -14,18 +14,18 @@
     "@element-plus/icons-vue": "^2.3.2",
     "@tailwindcss/vite": "^4.2.1",
     "@vueuse/core": "^14.2.1",
-    "element-plus": "^2.13.2",
+    "element-plus": "^2.13.5",
     "pinia": "^3.0.4",
     "pinia-plugin-persistedstate": "^4.7.1",
     "tailwindcss": "^4.2.1",
-    "vue": "^3.5.29",
+    "vue": "^3.5.30",
     "vue-router": "^5.0.3"
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.9.2",
-    "@iconify-json/carbon": "^1.2.18",
+    "@iconify-json/carbon": "^1.2.19",
     "@tsconfig/node22": "^22.0.5",
-    "@types/node": "^22.19.11",
+    "@types/node": "^22.19.15",
     "@vitejs/plugin-vue": "^6.0.4",
     "@vue/tsconfig": "^0.8.1",
     "npm-run-all2": "^8.0.4",
@@ -36,11 +36,11 @@
     "unplugin-auto-import": "^21.0.0",
     "unplugin-vue-components": "^31.0.0",
     "vite": "npm:rolldown-vite@latest",
-    "vite-plugin-vue-devtools": "^8.0.6",
+    "vite-plugin-vue-devtools": "^8.0.7",
     "vite-plugin-vue-layouts": "^0.11.0",
     "vue-tsc": "^3.2.5"
   },
-  "packageManager": "pnpm@10.30.2",
+  "packageManager": "pnpm@10.32.0",
   "engines": {
     "node": "24.x"
   }
